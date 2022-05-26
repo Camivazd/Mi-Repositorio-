@@ -1,0 +1,29 @@
+/*REDES*/
+h2{
+    background-color: #fdf3ea;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: center;
+}
+.redes{
+    background-color: #fdf3ea;
+    text-align: center;
+
+    li{
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    display: inline-block;
+    }
+
+    a{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    width: 5px;
+
+    &:hover{
+    color: #343a40;
+    }
+    }
+}

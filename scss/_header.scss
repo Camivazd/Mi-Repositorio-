@@ -1,0 +1,68 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2? family= Bitter:ital,wght@0,300;1,300 & family= Mukta+Vaani:wght@300 & family= Mukta:wght@200 & family= Square+Peg & family= Updock & display=swap');
+
+body{
+    font-family: 'Mukta', sans-serif;
+    width: 100vw;
+    overflow-x: hidden;
+
+    html{
+        width: 100vw;
+        overflow-x: hidden;
+    }
+
+/*HEADER*/
+
+    header{
+        position: sticky; 
+        top: 0%;
+        z-index:9999; 
+
+        img{
+            width: 100%;
+        }     
+
+        .nav {
+            background-color: #f0efeb;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            border-bottom: black 3px solid;
+            padding-bottom: 10px;
+            padding-top: 10px;
+        }
+
+        li{
+            list-style-type: none;
+            display: inline-block; 
+        }
+
+        a {
+            font-size: 1.2rem;
+            padding-left: 10px;
+            text-transform: uppercase;
+            color: black;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+          h1{
+           text-align: center;
+           background-color: #dbcdf0;
+           padding-top: 10px;
+           padding-bottom: 10px;
+          }
+          
+    }
+
+    a:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+}

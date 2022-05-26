@@ -1,578 +1,339 @@
-/*Tipografía*/
-@import url('https://fonts.googleapis.com/css2? family= Bitter:ital,wght@0,300;1,300 & family= Mukta+Vaani:wght@300 & family= Mukta:wght@200 & family= Square+Peg & family= Updock & display=swap');
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2? family= Bitter:ital,wght@0,300;1,300 & family= Mukta+Vaani:wght@300 & family= Mukta:wght@200 & family= Square+Peg & family= Updock & display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
-/*para resetear lo que viene por defecto el navegador*/
-*{
-    margin: 0;
-    padding: 0;
-}
-
-/*Aplico estilo al body*/
-body{
-    font-family: 'Mukta', sans-serif;
+body {
+  font-family: 'Mukta', sans-serif;
+  width: 100vw;
+  overflow-x: hidden;
+  /*HEADER*/ }
+  body html {
     width: 100vw;
-    overflow-x: hidden;
-}
-html{
-    width: 100vw;
-    overflow-x: hidden;
-
-}
-
-/*Estilos a las listas*/
-a{
-    text-decoration: none; /*saco subrayado*/
-    color: black;
-    font-weight: bold;
-}
-li{ 
-    list-style-type: none;
-    display: inline-block; /*coloco esta propiedad a todos los LI en general, para que las ubique todas en la misma fila*/
-}
-
-
-/* HEADER */
-header{
-    position: sticky; /*Aplico STICKY para la barra del NAV*/
+    overflow-x: hidden; }
+  body header {
+    position: sticky;
     top: 0%;
-    z-index:9999; /*esto soluciona que las imagenes no se superpongan al header*/
-}
-#logo{
-    background-size: cover;
-}
-.nav{
-    background-color: #f0efeb;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    border-bottom: black 3px solid;
-    padding-bottom: 10px;
-    padding-top: 10px;
-}
-.nav li{
-    font-size: 13px;
-    padding-left: 10px;
-    text-transform: uppercase;
-}
-.nav li :hover{ /*Para hacer el subrayado al nav*/
+    z-index: 9999; }
+    body header img {
+      width: 100%; }
+    body header .nav {
+      background-color: #f0efeb;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      border-bottom: black 3px solid;
+      padding-bottom: 10px;
+      padding-top: 10px; }
+    body header li {
+      list-style-type: none;
+      display: inline-block; }
+    body header a {
+      font-size: 1.2rem;
+      padding-left: 10px;
+      text-transform: uppercase;
+      color: black;
+      font-weight: bold;
+      text-decoration: none; }
+    body header h1 {
+      text-align: center;
+      background-color: #dbcdf0;
+      padding-top: 10px;
+      padding-bottom: 10px; }
+  body a:hover {
     text-decoration: underline;
-    cursor: pointer;
+    cursor: pointer; }
 
-}
-header h1{
-    text-align: center;
-    background-color: #dbcdf0;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-
-/* IMAGEN DE PRIMERA Y SEGUNDA PORTADA*/
-.contenedorPortada, .contenedoraPortada{
-    background-size: cover;
+/*MAIN // PRODUCTOS*/
+.productos {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; }
+  .productos #productosKend, .productos #productosKen {
     display: flex;
-}
-.contenedoraPortada{
-    padding-bottom: 20px;
-    padding-top: 20px;
-}
-.contenedorPortada{
-    padding-bottom: 20px;
-}
-
-
-/* PRODUCTOS*/
-.productos{
-    margin-top: 20px;
-    margin-bottom: 20px;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-#productosKend, #productosKen{ /*Página de Kendall*/
-    display: flex;
-    flex-wrap: wrap;
-}
-.maquillaje{
+    flex-wrap: wrap; }
+  .productos .maquillaje {
     border: 1px solid #d6dbe2;
     margin-bottom: 20px;
     margin-left: 10px;
-    margin-right: 10px;
-    
-}
-.maquillaje p{
+    margin-right: 10px; }
+  .productos p {
     color: black;
     text-transform: capitalize;
     vertical-align: inherit;
     text-align: center;
-    font-size: 1rem;
-}
-.maquillaje img:hover{
-    -webkit-transform:scale(1.1);transform:scale(0.9);
-    overflow:hidden;
-}
-span{
+    font-size: 1rem; }
+  .productos span {
     color: #776969;
     text-transform: capitalize;
-    line-height: 2;
-}
-iframe{
-    margin: 2%;
-    padding: 2%;
-}
+    line-height: 2; }
 
+.maquillaje img:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(0.9);
+  overflow: hidden; }
 
-/* REDES SOCIALES*/
-h2{
-    background-color: #fdf3ea;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    display: flex;
-    justify-content: center;
-}
-.redes{
-    background-color: #fdf3ea;
-    text-align: center;
-    
-}
-.redes div ul li{
-    color: black;
+/*MAIN // PORTADAS */
+.contenedorPortada {
+  background-size: cover;
+  display: flex;
+  padding-bottom: 20px; }
+
+.contenedoraPortada {
+  background-size: cover;
+  display: flex;
+  padding-bottom: 20px;
+  padding-top: 20px; }
+
+iframe {
+  margin: 2%;
+  padding: 2%; }
+
+/*REDES*/
+h2 {
+  background-color: #fdf3ea;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  display: flex;
+  justify-content: center; }
+
+.redes {
+  background-color: #fdf3ea;
+  text-align: center; }
+  .redes li {
     text-transform: uppercase;
-    font-weight: bolder;
-    padding-left: 3px;
     padding-bottom: 20px;
-}
-.redes div ul li :hover{
-    color: #343a40;
-}
+    display: inline-block; }
+  .redes a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    width: 5px; }
+    .redes a:hover {
+      color: #343a40; }
 
-
-/* FOOTER */
-.footer{
-    background-color: black;
-    display: flex;
-    display: block;
-    line-height: 4;
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-.footer nav a{
+/*FOOTER*/
+.footer {
+  background-color: black;
+  display: flex;
+  display: block;
+  line-height: 4;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px; }
+  .footer nav a {
     color: #fff;
     border-bottom: 1px #fff solid;
-}
-footer ul li{
-    color: #7e8185;
-    font-size: 12px;
-    margin-left: 10px;
-}
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px; }
 
+footer ul li {
+  color: #7e8185;
+  font-size: 12px;
+  margin-left: 10px;
+  display: inline-block; }
 
-/* PÁGINA DE CONTACTO */
-#headerC{
-    position: inherit;
-}
-#tituloC{
-    padding-top: 5px;
-    padding-bottom: 5px;
-    font-size: 18px;
-}
-#navC{
-    background-color: #eddcd2;
-    font-size: 1rem;
-    text-align: center;
-    padding-top: 15px;
-    padding-bottom: 15px;
-}
-/*Formulario*/
-form{
-    flex-wrap: wrap;
-    
-}
-fieldset{
-    text-align: center;
-    padding-bottom: 30px;
-}
-legend{
-    text-align: center;
-    padding-top: 15px;
-    padding-bottom: 15px;
-}
-.boton{
-    width: 200px;
-    margin: auto;
-    border-radius: 1px #272727 solid;
-    font-weight: bolder;
-    background-image: linear-gradient(to right, #EF629F, #EECDA3);
-}
-label{
-    padding-right: 160px;
-}
-.texto{
-    padding-right: 230px;
-}
-input, textarea{
-    display: block;
-    width: 21%;
-    padding: 5px;
-    margin: 5px auto;
-}
-/*Footer*/
-#footerT{
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
+/*CONTACTO*/
+#headerC {
+  position: inherit; }
 
+#tituloC {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 18px; }
 
-/* APLICO GRID AREA */
-.bodyPadreGrid{
-    display: grid;
-    grid-template-areas: "header header header"
-    "main main main"
-    "main main main"
-    "footer footer footer";
-}
-.header{
-    grid-area: header;
-}
-.main{
-    grid-area: main;
-}
-.footer{
-    grid-area: footer;
-} 
+#navC {
+  background-color: #eddcd2;
+  font-size: 1rem;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px; }
 
+form {
+  flex-wrap: wrap; }
 
-/* APLICO GRID AREA A LA PAGINA "CONTACTO" */
-.bodyPadreGridC{
-    display: grid;
-    grid-template-areas: "header header header"
-    "nav nav nav"
-    "main main main"
-    "footer footer footer";
-    
-}
-#headerC{
-    grid-area: header;
-}
-#mainC{
-    grid-area: main;
-}
-#footerT{
-    grid-area: footer;
-}
+fieldset {
+  text-align: center;
+  padding-bottom: 30px; }
 
+legend {
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px; }
 
-/* RESPONSIVE// APLICO MEDIAS QUERIES CON GRID - MOBILE*/
-@media screen and (max-width:400px){
-.bodyPadreGrid{
-    display: grid;
-    grid-template-areas: "header header header"
-    "main main main"
-    "main main main"
-    "footer footer footer";
-}
+.boton {
+  width: 200px;
+  margin: auto;
+  border-radius: 1px #272727 solid;
+  font-weight: bolder;
+  background-image: linear-gradient(to right, #EF629F, #EECDA3); }
 
-/* HEADER */
-.header{
-    grid-area: header;
-}
-#logo img, #logo{
-    width: 100%;
-} 
-header h1{
-    display: flex;
-    display: inline-block;
-    width: 100%;
-    text-align: center;
-    font-size: 1rem;
-}
-.nav{
-    display: flex;
-}
+label {
+  padding-right: 160px; }
 
-/* MAIN */
-.main{
-    grid-area: main;
-}
-.contenedorPortada, .contenedorPortada img{
-    width: 100%;
-}
-.productos{
+.texto {
+  padding-right: 230px; }
+
+input, textarea {
+  display: block;
+  width: 21%;
+  padding: 5px;
+  margin: 5px auto; }
+
+/* RESPONSIVE// MOBILE*/
+@media screen and (max-width: 400px) {
+  header {
+    position: sticky;
+    top: 0%; }
+    header #logo img, header #logo {
+      width: 100%; }
+    header h1 {
+      display: flex;
+      display: inline-block;
+      width: 100%;
+      text-align: center;
+      font-size: 1.2rem; }
+    header .nav {
+      display: flex; }
+      header .nav a {
+        font-size: 13px; }
+  .contenedorPortada, .contenedorPortada img {
+    width: 100%; }
+  .productos {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     display: inline-block;
     width: 100%;
     padding-left: 0;
-    padding-right: 0;
-}
-.maquillaje{
+    padding-right: 0; }
+  .maquillaje {
     padding: 20px;
-    margin: 20px;
-}
-#ken{ /*labial Kendall*/
+    margin: 20px; }
+  #ken {
     padding: 40px;
-    width: 400px;
-}
-.contenedoraPortada, .contenedoraPortada img{
-    width: 100vw;
-}
-iframe{
+    width: 400px; }
+  .contenedoraPortada {
+    width: 100vw; }
+    .contenedoraPortada img {
+      width: 100vw; }
+  iframe {
     padding: 0;
     margin: 0;
     width: 400px;
-    height: 400px;
-}
-
-/* REDES SOCIALES */
-h2{
+    height: 400px; }
+  h2 {
     width: 100vw;
     font-size: 1.150rem;
-    padding-left: 5px;
-}
-.redes{
+    padding-left: 5px; }
+  .redes {
     width: 100%;
-    font-size: 13px;
-}
+    font-size: 13px; }
+  footer .footer nav {
+    width: 100%; }
+  footer .footer nav a {
+    font-size: 12px; } }
 
-/* FOOTER */
-.footer{
-    grid-area: footer;
-} 
-.footer nav{
-    width: 100%;
-}
-.footer nav a{
-    font-size: 12px; 
-}
+/*Resposive - Página Contacto*/
+input, textarea {
+  width: 60%;
+  padding-left: 0;
+  padding-right: 0; }
 
+label, .texto {
+  text-align: center;
+  padding-left: 0;
+  padding-right: 0; }
 
-/* RESPONSIVE//PÁGINA "CONTACTO" - APLICO GRID (MOBILE)*/
-.bodyPadreGridC{
-    display: grid;
-    grid-template-areas: 
-    "header header header"
-    "nav nav nav"
-    "main main main"
-    "footer footer footer";
-}
-#headerC{
-    grid-area: header;
-}
-#mainC{
-    grid-area: main;
-}
-input, textarea{ /*formulario*/
-    width: 60%;
-    padding-left: 0;
-    padding-right: 0;
-}
-label, .texto{
-    text-align: center;
-    padding-left: 0;
-    padding-right: 0;
-}
-#footerT{
-    grid-area: footer;
-}
-}
-
-
-/* RESPONSIVE// APLICO MEDIAS QUERIES CON GRID - TABLET*/
-@media screen and (min-width: 401px) and (max-width: 960px){
-.bodyPadreGrid{
-    display: grid;
-    grid-template-areas: "header header header"
-    "main main main"
-    "main main main"
-    "footer footer footer";
-}
-        
-/* HEADER */
-.header{
-    grid-area: header;
-}
-#logo, #logo img{
-    width: 100%;
-}
-.nav{
+/* RESPONSIVE// TABLET*/
+@media screen and (min-width: 401px) and (max-width: 960px) {
+  header #logo, header #logo img {
+    width: 100%; }
+  header .nav {
     display: flex;
     display: inline-block;
-    width: 100%;
-}
-.nav h1{
-    width: 100%;
-}
-.nav ul li a{
-    font-size: 1.015rem;
-}
-
-/* MAIN */
-.main{
-    grid-area: main;
-}
-.contenedorPortada, .contenedorPortada img{
-    width: 100%;
-}
-.productos{
+    width: 100%; }
+    header .nav h1 {
+      width: 100%; }
+    header .nav ul li a {
+      font-size: 1.1rem; }
+  .contenedorPortada {
+    width: 100%; }
+    .contenedorPortada img {
+      width: 100%; }
+  .productos {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
     padding-left: 0;
-    padding-right: 0;
-}
-.maquillaje{
+    padding-right: 0; }
+  .maquillaje {
     padding: 20px;
-    margin: 20px;
-}
-.contenedoraPortada, .contenedoraPortada img{
-    width: 100%;
-}
-iframe{
+    margin: 20px; }
+  .contenedoraPortada {
+    width: 100%; }
+    .contenedoraPortada img {
+      width: 100%; }
+  iframe {
     padding: 0;
     margin: 0;
     width: 100%;
-    height: 400px;
-}
-#productosKen, #productosKend{
+    height: 400px; }
+  #productosKen, #productosKend {
     padding: 10px;
-    justify-content: center;
-}
-#ken{ /*labial Kendall*/
-    padding: 40px;
-}
-
-
-/* REDES SOCIALES */
-h2{
-    width: 100vw;
-    font-size: 1rem;
-    padding-left: 5px;
-}
-.redes{
-    width: 100%;
-    font-size: 13px;
-}
-
-/* FOOTER */
-.footer{
-    grid-area: footer;
-    width: 100vw;
-}
-.footer nav{
-    width: 100%;
-}
-.footer nav a{
-    font-size: 12px; 
-}
-
-
-/* RESPONSIVE// PÁGINA "CONTACTO" - APLICO GRID (TABLET)*/
-.bodyPadreGridC{
-    display: grid;
-    grid-template-areas: 
-    "header header header"
-    "nav nav nav"
-    "main main main"
-    "footer footer footer";
-}
-#headerC{
-    grid-area: header;
-}
-#mainC{
-    grid-area: main;
-}
-input, textarea{/* formulario*/
+    justify-content: center; }
+  #ken {
+    padding: 40px; }
+  input, textarea {
     width: 60%;
     padding-left: 0;
-    padding-right: 0;
-}
-label, .texto{
+    padding-right: 0; }
+  label, .texto {
     text-align: center;
     padding-left: 0;
-    padding-right: 0;
-}
-#footerT{
-    grid-area: footer;
-}
-}
+    padding-right: 0; } }
 
-
-/* RESPONSIVE// APLICO MEDIAS QUERIES CON GRID - DESKTOP*/
-@media screen and (min-width: 961px){
-.bodyPadreGrid{
-    display: grid;
-    grid-template-areas: "header header header"
-    "main main main"
-    "main main main"
-    "footer footer footer";
-}
-                
-/* HEADER */
-.header{
-    grid-area: header;
-}
-#logo, #logo img{
-    width: 100%;
-}
-.nav{
-    width: 100%;
-}
-.nav h1{
-    width: 100%;
-}
-.nav ul li a{
-    font-size: 1.20rem;
-}
-        
-/* MAIN */
-.main{
-    grid-area: main;
-}
-.contenedorPortada, .contenedorPortada img{
-    width: 100%;
-}
-.productos{
+@media screen and (min-width: 961px) {
+  /*RESPONSIVE // DESKTOP*/
+  #logo {
+    width: 100%; }
+    #logo img {
+      width: 100%; }
+  .nav {
+    width: 100%; }
+    .nav h1 {
+      width: 100%; }
+    .nav ul li a {
+      font-size: 1.20rem; }
+  .contenedorPortada {
+    width: 100%; }
+    .contenedorPortada img {
+      width: 100%; }
+  .productos {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
     padding-left: 0;
-    padding-right: 0;
-}
-.maquillaje{
+    padding-right: 0; }
+  .maquillaje {
     padding: 20px;
-    margin: 20px;
-}
-.contenedoraPortada, .contenedoraPortada img{
-    width: 100%;
-}
-#productosKen, #productosKend{
+    margin: 20px; }
+  .contenedoraPortada {
+    width: 100%; }
+    .contenedoraPortada img {
+      width: 100%; }
+  #productosKen, #productosKend {
     padding: 25px;
-    justify-content: center;
-}
-#ken{ /*labial Kendall*/
-    padding: 40px;
-}
-       
-/* FOOTER */
-.footer{
-    grid-area: footer;
-    width: 100vw;
-}
-.footer nav{
+    justify-content: center; }
+  #ken {
+    padding: 40px; }
+  .footer nav {
     width: 100%;
-    align-items: center;
-}
-.footer nav a{
-    font-size: 14px; 
-}
-}  
-
-
-
-
-
-
-
-    
+    align-items: center; }
+    .footer nav a {
+      font-size: 14px; } }

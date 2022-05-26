@@ -1,0 +1,59 @@
+/*MAIN // PRODUCTOS*/
+.productos {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+#productosKend, #productosKen {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.maquillaje {
+    border: 1px solid #d6dbe2;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}   
+
+p {
+    color: black;
+    text-transform: capitalize;
+    vertical-align: inherit;
+    text-align: center;
+    font-size: 1rem;
+}
+
+span{
+    color: #776969;
+    text-transform: capitalize;
+    line-height: 2;
+}
+
+}
+
+.maquillaje img:hover{
+-webkit-transform:scale(1.1);transform:scale(0.9);
+overflow:hidden;
+}
+
+/*MAIN // PORTADAS */ 
+.contenedorPortada {
+background-size: cover;
+display: flex;
+padding-bottom: 20px;
+}
+
+.contenedoraPortada {
+background-size: cover;
+display: flex;
+padding-bottom: 20px;
+padding-top: 20px;
+}
+
+iframe{
+margin: 2%;
+padding: 2%;
+}

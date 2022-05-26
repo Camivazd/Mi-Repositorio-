@@ -1,0 +1,25 @@
+/*FOOTER*/
+.footer {
+    background-color: black;
+    display: flex;
+    display: block;
+    line-height: 4;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  
+    nav a {
+    color: #fff;
+    border-bottom: 1px #fff solid;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+}
+  
+  footer ul li {
+    color: #7e8185;
+    font-size: 12px;
+    margin-left: 10px;
+    display: inline-block;
+}

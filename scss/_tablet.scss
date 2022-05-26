@@ -1,0 +1,82 @@
+/* RESPONSIVE// TABLET*/
+@media screen and (min-width: 401px) and (max-width: 960px){
+    header{
+    #logo, #logo img {
+        width: 100%;
+    }
+          
+    .nav {
+        display: flex;
+        display: inline-block;
+        width: 100%;
+          
+        h1 {
+            width: 100%;
+        }
+          
+        ul li a {
+            font-size: 1.1rem;
+        }
+        }
+    }
+    
+    
+    .contenedorPortada {
+        width: 100%;
+      
+        img {
+          width: 100%;
+        }
+    }
+      
+    .productos {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+      
+    .maquillaje {
+        padding: 20px;
+        margin: 20px;
+    }
+      
+    .contenedoraPortada {
+        width: 100%;
+      
+        img {
+          width: 100%;
+        }
+    }
+      
+    iframe {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        height: 400px;
+    }
+      
+    #productosKen, #productosKend {
+        padding: 10px;
+        justify-content: center;
+    }
+      
+    #ken {
+        
+        padding: 40px;
+    }
+    
+    input, textarea {
+        width: 60%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+      
+      label, .texto {
+        text-align: center;
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+    
