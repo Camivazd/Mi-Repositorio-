@@ -7,6 +7,8 @@
 
 @import url('https://fonts.googleapis.com/css2? family= Bitter:ital,wght@0,300;1,300 & family= Mukta+Vaani:wght@300 & family= Mukta:wght@200 & family= Square+Peg & family= Updock & display=swap');
 
+$back-color: #f0efeb;
+
 body{
     font-family: 'Mukta', sans-serif;
     width: 100vw;
@@ -29,7 +31,7 @@ body{
         }     
 
         .nav {
-            background-color: #f0efeb;
+            background-color: $back-color;
             display: flex;
             align-items: center;
             justify-content: space-around;

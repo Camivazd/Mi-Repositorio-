@@ -1,0 +1,15 @@
+//Extend
+
+.informacion{
+    font-size: 1rem;
+    color: teal;
+    text-align: center;
+    vertical-align: 2px;
+    width: 3px;
+    text-transform: uppercase;
+}
+
+.terminos{
+    @extend .informacion;
+    text-decoration: none;
+}

@@ -337,3 +337,26 @@ label, .texto {
     align-items: center; }
     .footer nav a {
       font-size: 14px; } }
+
+.pepitos {
+  background-color: black;
+  text-transform: capitalize;
+  vertical-align: inherit;
+  text-align: center;
+  font-size: 1rem; }
+
+.retratos {
+  border: 2px solid;
+  background-color: pink;
+  width: 5px; }
+
+.informacion, .terminos {
+  font-size: 1rem;
+  color: teal;
+  text-align: center;
+  vertical-align: 2px;
+  width: 3px;
+  text-transform: uppercase; }
+
+.terminos {
+  text-decoration: none; }

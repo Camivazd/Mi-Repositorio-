@@ -1,0 +1,13 @@
+
+$estilo: (color:black, text-trans: capitalize, linea: inherit, alineacion: center, tam: 1rem);
+
+//Mapa - Get
+
+.pepitos{
+    background-color: map-get($estilo, color);
+    text-transform: map-get($estilo, text-trans);
+    vertical-align: map-get($estilo, linea);
+    text-align: map-get($estilo, alineacion);
+    font-size: map-get($estilo, tam);
+
+}

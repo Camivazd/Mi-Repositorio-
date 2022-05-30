@@ -1,0 +1,11 @@
+//Mixin - sin parámetros
+@mixin cuadros {
+    border: 2px solid;
+    background-color: pink;
+    width: 5px;
+}
+
+.retratos{
+    @include cuadros;
+}
+

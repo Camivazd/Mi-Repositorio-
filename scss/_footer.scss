@@ -1,6 +1,8 @@
 /*FOOTER*/
+$back-footer:black;
+
 .footer {
-    background-color: black;
+    background-color: $back-footer;
     display: flex;
     display: block;
     line-height: 4;
