@@ -83,8 +83,7 @@ body {
   display: flex;
   padding-bottom: 20px; }
   .contenedorPortada img {
-    width: 100%;
-    height: calc(100vh - 100px); }
+    width: 100%; }
 
 .contenedoraPortada {
   background-size: cover;
@@ -92,8 +91,7 @@ body {
   padding-bottom: 20px;
   padding-top: 20px; }
   .contenedoraPortada img {
-    width: 100%;
-    height: calc(100vh - 100px); }
+    width: 100%; }
 
 iframe {
   margin: 2%;
