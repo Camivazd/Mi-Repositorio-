@@ -82,12 +82,18 @@ body {
   background-size: cover;
   display: flex;
   padding-bottom: 20px; }
+  .contenedorPortada img {
+    width: 100%;
+    height: calc(100vh - 100px); }
 
 .contenedoraPortada {
   background-size: cover;
   display: flex;
   padding-bottom: 20px;
   padding-top: 20px; }
+  .contenedoraPortada img {
+    width: 100%;
+    height: calc(100vh - 100px); }
 
 iframe {
   margin: 2%;
