@@ -44,6 +44,10 @@ overflow:hidden;
 background-size: cover;
 display: flex;
 padding-bottom: 20px;
+  img{
+    width: 100%;
+    height: calc(100vh - 100px);
+}
 }
 
 .contenedoraPortada {
@@ -51,6 +55,10 @@ background-size: cover;
 display: flex;
 padding-bottom: 20px;
 padding-top: 20px;
+  img{
+    width: 100%;
+    height: calc(100vh - 100px);
+}
 }
 
 iframe{
