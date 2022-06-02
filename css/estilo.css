@@ -5,21 +5,21 @@
   padding: 0;
   box-sizing: border-box; }
 
-body {
+html {
   font-family: 'Mukta', sans-serif;
   width: 100vw;
   overflow-x: hidden;
   /*HEADER*/ }
-  body html {
+  html body {
     width: 100vw;
     overflow-x: hidden; }
-  body header {
+  html header {
     position: sticky;
     top: 0%;
     z-index: 9999; }
-    body header img {
+    html header img {
       width: 100%; }
-    body header .nav {
+    html header .nav {
       background-color: #f0efeb;
       display: flex;
       align-items: center;
@@ -27,22 +27,22 @@ body {
       border-bottom: black 3px solid;
       padding-bottom: 10px;
       padding-top: 10px; }
-    body header li {
+    html header li {
       list-style-type: none;
       display: inline-block; }
-    body header a {
+    html header a {
       font-size: 1.2rem;
       padding-left: 10px;
       text-transform: uppercase;
       color: black;
       font-weight: bold;
       text-decoration: none; }
-    body header h1 {
+    html header h1 {
       text-align: center;
       background-color: #dbcdf0;
       padding-top: 10px;
       padding-bottom: 10px; }
-  body a:hover {
+  html a:hover {
     text-decoration: underline;
     cursor: pointer; }
 
