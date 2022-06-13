@@ -31,29 +31,35 @@
 
 
     <main id="mainC">
-
         <section>
             <!-- FORMULARIO -->
+
             <form>
                 <fieldset>
                     <legend>Registrate y obtené nuestras promociones</legend>
-                    <label class="texto" for="nombre">Nombre</label>
-                    <input id="nombre" type="text" placeholder="Ingrese su nombre aquí">
+
+                    <div class="promociones">
+                        <h3>Promociones Vigentes</h3> 
+                        <p class="promo">Nuestras promociones son válidas hasta el 8 de Junio de 2022.</p>
+                        <p class="promo">Tarjetas adheridas: débito y crédito VISA.</p>
+                        <p class="promo">Envíos gratis a partir de compras superiores a $15.000.</p>
+                    </div>
+
+                    <input class="input" id="nombre" type="text" placeholder="Ingrese su nombre">
                     <br><br>
                     <!--BR para separar por ahora-->
-                    <label class="texto" for="apellido">Apellido</label>
-                    <input id="apellido" type="text" placeholder="Ingrese su apellido aquí">
+                    <input  class="input" id="apellido" type="text" placeholder="Ingrese su apellido">
                     <br><br>
-                    <label for="">Correo Electrónico</label>
-                    <input type="email">
+                    <input class="input" type="email" placeholder="Ingrese su email">
                     <br><br>
-                    <textarea name="" id="" cols="30" rows="10"
+                    <textarea class="mensaje" name="" id="" cols="30" rows="10"
                         placeholder="Déjanos tu experiencia para mejorar"></textarea>
                     <br><br>
                     <input class="boton animate__animated animate__pulse" type="submit">
                 </fieldset>
             </form>
         </section>
+
     </main>
 
     <footer class="footer" id="footerT">
